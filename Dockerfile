@@ -27,6 +27,7 @@ RUN set -eux ; \
     ./configure \
         --with-http_ssl_module \
         --with-http_gzip_static_module \
+        --with-http_realip_module \
         --add-module=/tmp/src/ngx_brotli-master \
         --conf-path=/etc/nginx/nginx.conf \
         --pid-path=/tmp/nginx.pid \
