@@ -19,7 +19,7 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: |
-            ghcr.io/rivals-space/nginx-unpriv-brotli-zstd
+            ghcr.io/rivals-space/nginx-unpriv-brotli
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
       - name: Set up Docker Buildx
