@@ -15,6 +15,7 @@ RUN set -eux ; \
     apk --update add --no-cache \
       pcre2 \
       brotli-libs \
+      perl \
     ; \
     mkdir -p /tmp/src ; \
     cd /tmp/src ; \
@@ -29,6 +30,7 @@ RUN set -eux ; \
         --with-http_gzip_static_module \
         --with-http_realip_module \
         --with-http_stub_status_module \
+        --with-http_perl_module \
         --add-module=/tmp/src/ngx_brotli-master \
         --conf-path=/etc/nginx/nginx.conf \
         --pid-path=/tmp/nginx.pid \
