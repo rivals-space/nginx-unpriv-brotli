@@ -11,6 +11,7 @@ RUN set -eux ; \
       wget \
       build-base \
       brotli-dev \
+      perl-dev \
     ; \
     apk --update add --no-cache \
       pcre2 \
