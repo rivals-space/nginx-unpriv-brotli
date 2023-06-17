@@ -1,6 +1,6 @@
 FROM alpine:3.17
 
-ARG NGINX_VERSION=1.23.3
+ARG NGINX_VERSION=1.25.1
 
 
 RUN set -eux ; \
